@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <style>
+    /* Analyze Section */
+.analyze_section {
+  padding: 50px 0;
+  background-color: #e4effa;
+}
+
+.analyze_section .heading_container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.analyze_section .heading_container h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+}
+
+.analyze_section .heading_container p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.analyze_section .upload_box, .analyze_section .browse_box {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.analyze_section .upload_box .img-box, .analyze_section .browse_box .img-box {
+  margin-bottom: 20px;
+}
+
+.analyze_section .upload_box .img-box img, .analyze_section .browse_box .img-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.analyze_section .upload_box h4, .analyze_section .browse_box h4 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.analyze_section .upload_box p, .analyze_section .browse_box p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.analyze_section .upload_box input[type="file"], .analyze_section .browse_box input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.analyze_section .btn-analyze {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #203f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.analyze_section .btn-analyze:hover {
+  background-color: #0f1214;
+}
+
+.analyze_section .result_box {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  text-align: center;
+}
+
+.analyze_section .result_box h4 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.analyze_section .result_box p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .analyze_section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .analyze_section .upload_box, .analyze_section .browse_box {
+    margin-bottom: 30px;
+  }
+}
+
+  </style>
+
+  <title>Visionary</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>VISIONARY</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Analyze</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <form class="form-inline">
+                <button class="btn   nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="">
+              
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Welcome to Visionary<br>
+                      
+                    </h1>
+                    <p>
+                      An AI-powered tool for Age and Gender Detection uses deep learning algorithms to predict the age group and gender based on facial features. By analyzing images with pre-trained convolutional neural networks (CNNs), it provides accurate insights for applications like security, advertising, and personalized experiences. The system continuously improves with new data, ensuring high performance.  <div class="btn-box">
+                      <a href="about.html" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="contact.html" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="images/slider-img.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+             
+              <div style="display: flex; justify-content:space-around;">
+                <div style="flex: 1; padding-right: 128px; ">
+                  <p>
+                    Visionary is a cutting-edge system that leverages Deep Learning algorithms to accurately detect age and gender from images. By analyzing facial features and patterns, Visionary provides real-time predictions with remarkable precision, making it an ideal solution for various applications such as security, marketing, and user personalization.
+                  </p>
+                </div>
+                <div style="flex: 1; text-align: right; ">
+                  <img src="img2.jpeg" alt=" " style="width: 180%; height: auto;">
+                </div>
+              </div>
+              
+            </div>
+            
+            <br>
+          
+            <h3>Key Features</h3>
+      
+            <ul>
+              
+              <li><p>Accurate Age and Gender Detection</p></li>
+              <li><p>Real-time Predictions with Deep Learning</p></li>
+              <li><p>High Precision for Various Facial Features</p></li>
+              <li><p>Scalable for Multiple Use Cases</p></li>
+              <li><p>Compatible with Images and Video Streams</p></li>
+              <li><p>Easy Integration with Existing Systems</p></li>
+            </ul>
+            <br>
+            <h3>Applications</h3>
+            <p>
+              Visionary can be used in various domains, including:
+              <ul>
+                <li><strong>Security:</strong><p> Enhancing surveillance systems by identifying age and gender demographics in real time.</p></li>
+                <li><strong>Retail & Marketing:</strong><p> Personalizing user experiences based on demographic data for targeted advertising.</p></li>
+                <li><strong>Healthcare:</strong> <p>Assisting in medical applications where age-related factors are crucial for diagnosis.</p></li>
+                <li><strong>Social Media:</strong> <p>Automatically categorizing content based on user demographics.</p></li>
+              </ul>
+            </p>
+            <br>
+            <h3>Future Scope</h3>
+            <p>
+              As the system continues to evolve, Visionary plans to integrate advanced AI techniques for even greater accuracy in challenging environments. Future developments include improving facial recognition under varying conditions (lighting, angles), extending the system to detect more demographics, and expanding its applicability to diverse industries such as automotive and gaming.
+            </p>        
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- server section -->
+
+  <section class="server_section">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="img2.webp" alt="">
+            <div class="  ">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                "Let us analyze your images.     </h2>
+              <p>
+                Our AI-powered tool uses deep learning to accurately detect age and gender from facial features, providing valuable insights for applications such as security, marketing, and user experience enhancement. Trust our system to deliver precise and actionable data every time."
+              </p>
+            </div>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end server section -->
+<!-- analyze section -->
+<section class="analyze_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        Analyze Age and Gender
+      </h2>
+      <p>
+        Upload an image to analyze the age and gender of the person in the image using our Deep Learning model.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="upload_box">
+          <div class="img-box">
+            <img src="" alt=" ">
+          </div>
+          <div class="detail-box">
+            <h4>
+              Upload an Image
+            </h4>
+            <p>
+              Select an image from your device to get age and gender predictions.
+            </p><br>
+            <input type="file" id="image-upload" accept="image/*">
+            <button class="btn-analyze" onclick="analyzeImage()">Analyze</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="browse_box">
+          <div class="img-box">
+            <img src="" alt=" ">
+          </div>
+          <div class="detail-box">
+            <h4>
+              Browse from the Web
+            </h4>
+            <p>
+              You can also search for an image online and paste the link here to analyze.
+            </p>
+            <input type="text" id="image-url" placeholder="Paste Image URL">
+            <button class="btn-analyze" onclick="analyzeURL()">Analyze</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="result_box" style="display: none;">
+          <h4>Results</h4>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end analyze section -->
+<br><br>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Get In Touch
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-lg-6 mx-auto">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Your Phone" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box ">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91-989XXXYYY
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  supportvisionary@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="" href="about.html">
+                <img src="images/nav-bullet.png" alt="">
+                About
+              </a>
+              <a class="" href="service.html">
+                <img src="images/nav-bullet.png" alt="">
+                Analyze
+              </a>
+            
+              <a class="" href="contact.html">
+                <img src="images/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              "Visionary leverages advanced deep learning models to analyze images, providing accurate age and gender detection. It analyzes facial features to provide accurate age and gender insights for various applications."            </p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-0">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Visionary</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
